@@ -1,0 +1,14 @@
+[package]
+name = "CgGrammar"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[build-dependencies] # <-- We added this and everything after!
+lalrpop = "0.22.0"
+
+[dependencies]
+lalrpop-util = { version = "0.21.0", features = ["lexer", "unicode"] }
+rand = "0.8" # Replace with the latest version
+itertools = "0.13.0"
+
